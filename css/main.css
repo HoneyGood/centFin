@@ -724,14 +724,7 @@ a.btn, svg {
 /*--------------------------------------------------------*/
 
 
-/* SECTION */
 
-
-section .slider{
-    height: 850px;
-    width: 500px;
-    background: #2a3246;
-}
 
 @media print {
     .accept__text .btn {
