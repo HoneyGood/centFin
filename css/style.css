@@ -1,6 +1,5 @@
 /* SECTION */
 
-
 .slider{
     height: 80vh !important;
     background: #2a3246;
@@ -24,4 +23,12 @@
 .footer{
     height: 20vh !important;
     background: #313131;
+}
+
+
+/*main styles */
+.text-info{
+    color: #fefefe;
+    text-align: center;
+    font-size: 9vh;
 }
