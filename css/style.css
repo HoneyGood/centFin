@@ -1,16 +1,21 @@
 /* SECTION */
-body,html{
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 .slider{
     height: 80vh !important;
-    background: #2a3246;
+    background: #bfc1c7;
     background-image: url("../images/headerPic.jpg");
     background-size: cover;
     background-position: center center;
     position: relative;
+    color: #000;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
 }
 .shadow-cover{
     position: absolute;
@@ -25,11 +30,14 @@ body,html{
 .slider .content{
     position: relative;
     z-index: 10;
+    height: 100%;
 }
 
+
+
 .company{
-    height: 80vh !important;
-    background: #bfc1c7;
+    /*height: 80vh !important;*/
+    /*background: #f5f6f8;*/
 }
 
 .employee{
@@ -52,5 +60,14 @@ body,html{
 .text-info{
     color: #fefefe;
     text-align: center;
+    font-size: 9vh;
+}
+
+h2{
+    margin-bottom: 20px;
     font-size: 42px;
+}
+
+.text-center{
+    text-align: center !important;
 }

@@ -720,6 +720,292 @@ a.btn, svg {
     -webkit-filter: none;
     filter: none
 }
+/*--------------------------------------------------------*/
+
+
+/*КЛЮЧЕВЫЕ ДАТЫ КОМПАНИИ */
+
+.img-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 460px
+}
+
+.img-cover--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.img-cover--auto77 {
+    height: auto;
+    padding: 77px 0
+}
+
+.img-cover:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.img-cover:before {
+    content: '';
+    opacity: .3;
+    background: #000
+}
+
+.img-cover--blur {
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    transform: scale(1.1)
+}
+
+.img-cover .ico--next, .img-cover .ico--prev {
+    top: 50%;
+    left: 60px;
+    margin-top: -23px
+}
+
+.img-cover .ico--next {
+    left: auto;
+    right: 60px
+}
+
+.about-intro {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 40px
+}
+
+.about-intro__b {
+    display: block;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 300;
+    color: #ffee2f
+}
+
+.about-intro li:nth-child(1) {
+    padding-right: 30px
+}
+
+.about-intro li:nth-child(2) {
+    padding-right: 15px
+}
+
+.about-intro li:nth-child(3) {
+    padding-left: 15px
+}
+.table__td {
+    display: table-cell;
+    vertical-align: top
+}
+
+.table__td--bottom {
+    vertical-align: bottom
+}
+
+.table__td--middle {
+    vertical-align: middle
+}
+
+.img-big .h1, .img-big h1 {
+    padding: 70px 0 40px
+}
+.about .center {
+    max-width: 900px
+}
+.about .h1 {
+    padding-top: 28px
+}
+
+.about-intro {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 40px
+}
+
+.about-intro__b {
+    display: block;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 300;
+    color: #ffee2f
+}
+
+.about-intro li:nth-child(1) {
+    padding-right: 30px
+}
+
+.about-intro li:nth-child(2) {
+    padding-right: 15px
+}
+
+.about-intro li:nth-child(3) {
+    padding-left: 15px
+}
+
+#about-slider {
+    position: relative;
+    height: 24px;
+    margin: 0 3px
+}
+
+#about-slider:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    height: 4px;
+    left: -3px;
+    right: -3px;
+    content: '';
+    border-radius: 2px;
+    background: #fff
+}
+
+#about-slider .sep12, #about-slider .sep8 {
+    position: absolute;
+    top: 4px;
+    width: 1px;
+    height: 8px;
+    background: #fff
+}
+
+#about-slider .sep12 {
+    height: 12px
+}
+
+#about-slider .ui-slider-handle:focus {
+    outline: 0;
+}
+
+.about-table-years {
+    margin: 12px 0 22px;
+    position: relative
+}
+
+.about-table-years li, .about-table-years ul {
+    position: absolute;
+    top: 0;
+    left: -22px
+}
+
+.about-table-years li {
+    width: 50px;
+    color: #fff;
+    text-align: center
+}
+
+.about-text {
+    padding-bottom: 44px;
+    text-align: center
+}
+
+.about-text__h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 300;
+    padding: 80px 0 20px
+}
+
+.about-text__p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    padding: 0 140px 26px
+}
+
+.about-map #map {
+    height: 460px
+}
+
+.about-text--face {
+    padding-bottom: 60px
+}
+
+.about-text--face .about-text__h2 {
+    padding: 70px 0 14px
+}
+
+.about-face li {
+    width: 174px;
+    color: #ff0142;
+    margin: 24px 20px 14px
+}
+
+.about-face img {
+    width: 174px;
+    height: 112px;
+    border-radius: 10px;
+    border: solid 1px #d8dce7;
+    display: block
+}
+
+.about-face__name {
+    color: #2a3246;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    display: block;
+    padding-top: 22px
+}
+.center, .input {
+    position: relative
+}
+.center {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+    width: 100%;
+}
+.align-center {
+    text-align: center
+}
+.table--fixed {
+    width: 100%;
+    table-layout: fixed
+}
+.table {
+    display: table
+}
+.frontend h1, .h1 {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    /*font-size: 36px;*/
+    /*line-height: 46px;*/
+    font-weight: 300
+}
+.flexbox__ma {
+    margin: auto
+}
+.ui-slider-range {
+    background: #96a0aa
+}
+
+.ui-slider-handle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    top: -21px;
+    margin-left: -25px;
+    z-index: 2;
+    opacity: .99;
+    background: url(../images/slider-handle.svg) center no-repeat;
+    -moz-touch-action: none;
+    -webkit-touch-action: none;
+    touch-action: none
+}
+
+
 
 /*--------------------------------------------------------*/
 
