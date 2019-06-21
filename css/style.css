@@ -6,6 +6,7 @@
 }
 
 .company{
+    position: relative;
     /*height: 80vh !important;*/
     /*background: #f5f6f8;*/
 }
@@ -40,19 +41,23 @@
 a.m3-scroll-arr {
     cursor: pointer;
     position: absolute;
-    margin: -24px 0 0 -24px;
     z-index: 999999;
     left: 50%;
-    top: 99%;
-    width: 48px;
-    height: 48px;
-    font-size: 48px;
-    line-height: 48px;
+    transform: translateX(-50%);
+    top: -32px;
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
+    line-height: 70px;
     text-align: center;
     right: auto;
     color: #fefefe;
     background-color: #cb0d3e;
     border-radius: 50%;
+    transition: .3s background-color;
+}
+a.m3-scroll-arr:hover{
+    background-color: #f10d42;
 }
 .new-btn{
     border-radius: 30px !important;
