@@ -43,6 +43,7 @@
 .footer1 a {
     text-decoration: none;
     color: #fff;
+    transition: .4s color;
 }
 
 .widget-social a:hover {
