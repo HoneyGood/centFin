@@ -36,6 +36,7 @@ p{
 
 
 .company{
+    position: relative;
     /*height: 80vh !important;*/
     /*background: #f5f6f8;*/
 }
@@ -70,4 +71,60 @@ h2{
 
 .text-center{
     text-align: center !important;
+}
+
+.footer1 {
+    padding-top: 5px;
+    background-color: #4a433f;
+    color: #fff;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s color;
+}
+
+.widget-social a:hover {
+    color: #cb0d3e !important;
+}
+
+.widget-social li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+a.m3-scroll-arr {
+    cursor: pointer;
+    position: absolute;
+    z-index: 999999;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -32px;
+    width: 70px;
+    height: 70px;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    right: auto;
+    color: #fefefe;
+    background-color: #cb0d3e;
+    border-radius: 50%;
+    transition: .3s background-color;
+}
+a.m3-scroll-arr:hover{
+    background-color: #f10d42;
+}
+.new-btn{
+    border-radius: 30px !important;
+    padding: 0 25px !important;
+    height: 56px !important;
+}
+.flexbox__ma{
+    padding-top: 3em;
+}
+.museumbutton{
+    padding-top: 3.5em;
 }
