@@ -2,12 +2,12 @@
 
 .slider{
     height: 80vh !important;
-    background: #2a3246;
+    background: #bfc1c7;
 }
 
 .company{
-    height: 80vh !important;
-    background: #bfc1c7;
+    /*height: 80vh !important;*/
+    /*background: #f5f6f8;*/
 }
 
 .employee{
@@ -31,4 +31,8 @@
     color: #fefefe;
     text-align: center;
     font-size: 9vh;
+}
+
+.text-center{
+    text-align: center !important;
 }
