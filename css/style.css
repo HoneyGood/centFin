@@ -1,41 +1,59 @@
 /* SECTION */
 
-.slider{
+.slider {
     /*height: 80vh !important;*/
     /*background: #bfc1c7;*/
     margin: 20px auto 40px;
+    font-size: 16px;
 }
 
-.company{
+.company {
     position: relative;
     /*height: 80vh !important;*/
     /*background: #f5f6f8;*/
 }
 
-.employee{
+.employee {
     height: 80vh !important;
     background: #ffe748;
 }
 
-.donation{
+.donation {
     height: 80vh !important;
     background: #64DD17;
 }
 
-.footer{
-    height: 20vh !important;
-    background: #313131;
+
+.footer__up {
+    position: fixed !important;
+    width: 48px;
+    height: 48px;
+    right: 25px !important;
+    bottom: 90px !important;
+    color: transparent;
+    font-size: 0;
+    box-shadow: 0 0 14px rgba(122, 135, 147, .43);
+    border-radius: 50% !important;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath fill='%23FF0142' d='M1.54 6.73a.887.887 0 0 1-1.275 0 .936.936 0 0 1 0-1.305L5.362.271a.889.889 0 0 1 1.277 0l5.097 5.154a.937.937 0 0 1 0 1.304.889.889 0 0 1-1.277 0l-4.46-4.227L1.54 6.729z'/%3E%3C/svg%3E%0A") center no-repeat !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+    z-index: 1
 }
 
+.footer__up--show {
+    opacity: 1;
+    pointer-events: auto
+}
 
 /*main styles */
-.text-info{
+.text-info {
     color: #313131;
     text-align: center;
     font-size: 9vh;
 }
 
-.text-center{
+.text-center {
     text-align: center !important;
 }
 
@@ -57,11 +75,12 @@
     color: #cb0d3e !important;
 }
 
-.widget-social li{
+.widget-social li {
     list-style: none;
     display: inline-block;
     margin-right: 20px;
 }
+
 a.m3-scroll-arr {
     cursor: pointer;
     position: absolute;
@@ -80,22 +99,26 @@ a.m3-scroll-arr {
     border-radius: 50%;
     transition: .3s background-color;
 }
-a.m3-scroll-arr:hover{
+
+a.m3-scroll-arr:hover {
     background-color: #f10d42;
 }
-.new-btn{
+
+.new-btn {
     border-radius: 30px !important;
     padding: 0 25px !important;
     height: 56px !important;
 }
-.flexbox__ma{
+
+.flexbox__ma {
     padding-top: 3em;
 }
-.museumbutton{
+
+.museumbutton {
     padding-top: 3.5em;
 }
 
-.place{
+.place {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -105,6 +128,7 @@ a.m3-scroll-arr:hover{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
+
 @media (min-width: 576px) {
     .place {
         max-width: 540px;
@@ -122,6 +146,7 @@ a.m3-scroll-arr:hover{
         max-width: 960px;
     }
 }
+
 @media (min-width: 1200px) {
     .place {
         max-width: 1140px;
