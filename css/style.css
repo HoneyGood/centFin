@@ -55,6 +55,39 @@ p{
     height: 20vh !important;
     background: #313131;
 }
+.leftside {
+}
+.rightside{
+}
+.btn1 {
+    display: block;
+    margin-top: 32px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff0142;
+    width: 227px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 55px;
+    text-transform: capitalize;
+    outline: none;
+    transition: background-color .1s ease;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+}
+.btn1:focus, .btn1:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.btn1:hover {
+    background-color: #ff4573;
+}
+.btn1:active {
+    transform: translateY(2px);
+}
 
 
 /*main styles */
