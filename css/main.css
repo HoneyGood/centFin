@@ -2414,6 +2414,7 @@ a.btn, svg {
     }
 
     .header__menu-full {
+        z-index: 99999;
         position: absolute;
         top: 100%;
         left: -40px;
