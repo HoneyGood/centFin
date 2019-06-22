@@ -2,7 +2,7 @@
 
 .slider{
     height: 80vh !important;
-    background: #bfc1c7;
+    /*background: #bfc1c7;*/
 }
 
 .company{
@@ -29,7 +29,7 @@
 
 /*main styles */
 .text-info{
-    color: #fefefe;
+    color: #313131;
     text-align: center;
     font-size: 9vh;
 }
