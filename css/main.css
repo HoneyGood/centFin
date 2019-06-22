@@ -200,7 +200,7 @@ a.btn, svg {
     flex-shrink: 0;
     z-index: 6;
     white-space: nowrap;
-    background-color: #fff
+    /*background-color: #fff*/
 }
 .center-new {
     width: 1170px;
