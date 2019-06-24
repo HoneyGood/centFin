@@ -1,0 +1,15 @@
+.team-head {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.underline {
+  width: 150px;
+  height: 3px;
+  background-color: #cb0d3e;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
