@@ -43,6 +43,9 @@
     background-color: #fff;
     color: #000000;
     padding-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer1 a {
@@ -94,6 +97,8 @@ a.m3-scroll-arr {
 }
 
 .widget-social-icons {
+    width: 150px;
+    margin-left: auto;
     list-style: none;
     text-align: right;
     display: inline-block;
