@@ -38,17 +38,19 @@
 }
 
 .footer1 {
-    padding-top: 5px;
-    background-color: #4a433f;
-    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    color: #000000;
     padding-right: 10px;
-    text-align: center;
 }
 
 .footer1 a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     transition: .3s color;
+    font-size: 14px;
+    font-weight: 550;
 }
 
 .widget-social a:hover {
@@ -58,8 +60,10 @@
 .widget-social li{
     list-style: none;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 17px;
+    margin-left: 5px;
 }
+
 a.m3-scroll-arr {
     cursor: pointer;
     position: absolute;
@@ -87,4 +91,23 @@ a.m3-scroll-arr {
 }
 .museumbutton{
     padding-top: 3.5em;
+}
+
+.widget-social-icons {
+    list-style: none;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+.widget-social-icons li{
+    margin: 10px;
+    display: inline-block;
+}
+
+.widget-social {
+    display: inline-block;
+}
+
+.widget-social-icons a:hover {
+    color: #cb0d3e !important;
 }
