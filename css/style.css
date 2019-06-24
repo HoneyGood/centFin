@@ -14,9 +14,10 @@
 }
 
 .employee {
-    margin: auto;
+    /*margin: auto;*/
     width: 70%;
-    height: 95vh !important;
+    margin: 20px auto 80px;
+    /*height: 95vh !important;*/
     background: #fefefe;
 }
 
