@@ -1,5 +1,5 @@
 /* SECTION */
-
+@import "team.css";
 .slider {
     /*height: 80vh !important;*/
     /*background: #bfc1c7;*/
@@ -14,8 +14,11 @@
 }
 
 .employee {
-    height: 80vh !important;
-    background: #ffe748;
+    /*margin: auto;*/
+    width: 70%;
+    margin: 20px auto 80px;
+    /*height: 95vh !important;*/
+    background: #fefefe;
 }
 
 .donation {
@@ -48,9 +51,10 @@
 
 /*main styles */
 .text-info {
+    margin-top: 30px;
     color: #313131;
     text-align: center;
-    font-size: 9vh;
+    font-size: 42px;
 }
 
 .text-center {
@@ -119,7 +123,7 @@ a.m3-scroll-arr:hover {
 }
 
 .place {
-    width: 100%;
+    /*width: 100%;*/
     padding-right: 15px;
     padding-left: 15px;
     background-color: #F7F7F7;
