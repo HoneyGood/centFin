@@ -1,10 +1,10 @@
-.team-head {
-  width: 50%;
+.employee .team-head {
+  width: 70%;
   margin: auto;
   text-align: center;
 }
 
-.underline {
+.employee .team-head .underline {
   width: 150px;
   height: 3px;
   background-color: #cb0d3e;
@@ -12,4 +12,36 @@
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.employee .workers {
+  margin-top: 40px;
+}
+
+.employee .workers .worker {
+  text-align: center;
+  padding: 4px;
+}
+
+.employee .workers .worker img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.employee .workers .worker h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.employee .workers .worker .position {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.employee .workers .worker p {
+  margin: auto;
+  margin-top: 15px;
+  width: 90%;
 }

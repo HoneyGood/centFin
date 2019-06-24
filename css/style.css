@@ -14,7 +14,9 @@
 }
 
 .employee {
-    height: 80vh !important;
+    margin: auto;
+    width: 70%;
+    height: 95vh !important;
     background: #fefefe;
 }
 
@@ -120,7 +122,7 @@ a.m3-scroll-arr:hover {
 }
 
 .place {
-    width: 100%;
+    /*width: 100%;*/
     padding-right: 15px;
     padding-left: 15px;
     background-color: #F7F7F7;
