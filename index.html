@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!--Адаптируем контент-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Стили иконок(можно использовать все уже подлючено и скачено)-->
     <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
 
     <!--Библиотека jquery-->
     <script src="js/jquery-3.3.1.js"></script>
@@ -22,219 +27,287 @@
     <script src="js/common.js"></script>
 </head>
 <body>
+<section class="place">
+    <header class="header">
+        <div class="center-new">
 
-<header class="header">
-    <div class="center-new">
+            <div class="header__top">
 
-        <div class="header__top">
+                <a class="header__logo" href="#">Центрофинанс</a>
 
-            <a class="header__logo" href="#">Центрофинанс</a>
+                <div class="header__links">
 
-            <div class="header__links">
+                    <div class="header__links-item">
+                        <a href="#" class="header__link header__link--office">
+                            Адреса офисов
+                        </a>
+                    </div>
 
-                <div class="header__links-item">
-                    <a href="#" class="header__link header__link--office">
-                        Адреса офисов
-                    </a>
+                    <div class="header__links-item">
+                        <button type="button" class="header__link header__link--support button" data-modal="help">
+                            Помощь
+                        </button>
+                    </div>
                 </div>
 
-                <div class="header__links-item">
-                    <button type="button" class="header__link header__link--support button" data-modal="help">
-                        Помощь
-                    </button>
-                </div>
+                <button type="button" class="header__btn-lk btn btn--medium" data-mobile="Войти" data-modal="lk">
+                    Личный кабинет
+                </button>
+
+                <button class="button header__btn-menu-toggle visible-sm" type="button">
+                    <span>открыть/закрыть меню сайта</span>
+                </button>
             </div>
 
-            <button type="button" class="header__btn-lk btn btn--medium" data-mobile="Войти" data-modal="lk">
-                Личный кабинет
-            </button>
+            <hr>
 
-            <button class="button header__btn-menu-toggle visible-sm" type="button">
-                <span>открыть/закрыть меню сайта</span>
-            </button>
+            <div class="header__nav">
+
+                <button type="button" class="header__btn-full-menu button"><span></span>Всё меню</button>
+
+
+                <nav class="header__menu">
+
+                    <ul class="header__menu-top">
+
+                        <li class="header__menu-top-item">
+                            <a class="header__menu-top-link" href="#">Займы</a>
+                        </li>
+
+                        <li class="header__menu-top-item">
+                            <a class="header__menu-top-link" href="#">Акции</a>
+                        </li>
+
+                        <li class="header__menu-top-item">
+                            <a class="header__menu-top-link" href="#">Новости</a>
+                        </li>
+
+                        <li class="header__menu-top-item">
+                            <a class="header__menu-top-link" href="#">Блог</a>
+                        </li>
+
+                        <li class="header__menu-top-item">
+                            <a class="header__menu-top-link" href="#">Вопросы - ответы</a>
+                        </li>
+
+                        <li class="header__menu-top-item">
+                            <a class="header__menu-top-link" href="#">Вакансии</a>
+                        </li>
+
+                        <li class="header__menu-top-item">
+                            <a class="header__menu-top-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__menu-full">
+                        <div class="header__menu-full-col header__menu-full-col--1">
+                            <p class="header__menu-full-head">
+                                КРЕДИТНЫЕ ПРОДУКТЫ </p>
+
+                            <ul class="header__menu-full-list">
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Простой </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Долгосрочный </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Пенсионный </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Неделя даром </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Онлайн </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-full-col header__menu-full-col--2">
+                            <p class="header__menu-full-head">
+                                ЦЕНТРОФИНАНС </p>
+
+                            <ul class="header__menu-full-list">
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        О компании </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Документы </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Вакансии </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Работа у нас </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Отзывы клиентов </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Контакты </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Адреса офисов </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-full-col header__menu-full-col--3">
+                            <p class="header__menu-full-head">
+                                РАЗДЕЛЫ САЙТА </p>
+
+                            <ul class="header__menu-full-list">
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Акции </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Новости </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Блог </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Вопросы - ответы </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Правила цитирования </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Арендодателям </a>
+                                </li>
+
+                                <li class="header__menu-full-item">
+                                    <a href="#" class="header__menu-full-link">
+                                        Карта сайта </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
+    </header>
 
-        <hr>
-
-        <div class="header__nav">
-
-            <button type="button" class="header__btn-full-menu button"><span></span>Всё меню</button>
-
-
-            <nav class="header__menu">
-
-                <ul class="header__menu-top">
-
-                    <li class="header__menu-top-item">
-                        <a class="header__menu-top-link" href="#">Займы</a>
-                    </li>
-
-                    <li class="header__menu-top-item">
-                        <a class="header__menu-top-link" href="#">Акции</a>
-                    </li>
-
-                    <li class="header__menu-top-item">
-                        <a class="header__menu-top-link" href="#">Новости</a>
-                    </li>
-
-                    <li class="header__menu-top-item">
-                        <a class="header__menu-top-link" href="#">Блог</a>
-                    </li>
-
-                    <li class="header__menu-top-item">
-                        <a class="header__menu-top-link" href="#">Вопросы - ответы</a>
-                    </li>
-
-                    <li class="header__menu-top-item">
-                        <a class="header__menu-top-link" href="#">Вакансии</a>
-                    </li>
-
-                    <li class="header__menu-top-item">
-                        <a class="header__menu-top-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-
-                <div class="header__menu-full">
-                    <div class="header__menu-full-col header__menu-full-col--1">
-                        <p class="header__menu-full-head">
-                            КРЕДИТНЫЕ ПРОДУКТЫ </p>
-
-                        <ul class="header__menu-full-list">
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Простой </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Долгосрочный </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Пенсионный </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Неделя даром </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Онлайн </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header__menu-full-col header__menu-full-col--2">
-                        <p class="header__menu-full-head">
-                            ЦЕНТРОФИНАНС </p>
-
-                        <ul class="header__menu-full-list">
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    О компании </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Документы </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Вакансии </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Работа у нас </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Отзывы клиентов </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Контакты </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Адреса офисов </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header__menu-full-col header__menu-full-col--3">
-                        <p class="header__menu-full-head">
-                            РАЗДЕЛЫ САЙТА </p>
-
-                        <ul class="header__menu-full-list">
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Акции </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Новости </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Блог </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Вопросы - ответы </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Правила цитирования </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Арендодателям </a>
-                            </li>
-
-                            <li class="header__menu-full-item">
-                                <a href="#" class="header__menu-full-link">
-                                    Карта сайта </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <!--ТУТ СЛАЙДЕР цвета фона меняйте-->
+    <div class="slider">
+        <!--<h2 class="text-info">ТУТ СЛАЙДЕР</h2>-->
+        <div class="row justify-content-center">
+            <div class="col-xl-6">A, ab accusantium animi architecto at culpa delectus deleniti
+                est fugiat hic illum labore laboriosam magni molestias necessitatibus, nemo nulla quis ratione
+                repellendus repudiandae saepe sequi sint velit? Animi autem commodi deserunt dolor dolore dolores ea,
+                est et eveniet excepturi facilis impedit in inventore iure laudantium libero magnam modi nisi non
+                nostrum numquam odit officia omnis pariatur perspiciatis porro possimus praesentium quasi quibusdam
+                quidem quos rem rerum sit, veniam veritatis, vitae voluptatum? Deleniti fugiat iste, labore neque
+                reiciendis unde! Adipisci aut ea illum perferendis quas quo, velit? Aut culpa dolorem ducimus earum eum
+                facere illo incidunt ipsum iusto, laboriosam laudantium, maiores nesciunt obcaecati odio perspiciatis
+                quaerat reiciendis, sequi temporibus vero voluptatibus. Aperiam ducimus hic maiores numquam obcaecati
+                odit ratione sed. Ea excepturi iusto mollitia, odit pariatur placeat quam quos recusandae tempora. Ab
+                accusantium ad aspernatur assumenda at autem commodi consectetur dolores dolorum ducimus eos eum eveniet
+                impedit laborum laudantium maiores natus nihil, nobis nulla numquam omnis praesentium quae quia
+                quibusdam ratione reiciendis repellat reprehenderit sed similique sint sit tempora totam vel veritatis
+                vero voluptate voluptatem. Animi aperiam debitis deserunt distinctio dolores dolorum esse excepturi,
+                facere hic, in iste laudantium, magnam modi molestiae non obcaecati perferendis quae quam tempora
+                voluptatum? Alias asperiores aspernatur, aut, consectetur consequuntur cumque ex explicabo facilis
+                fugiat illum itaque laboriosam natus nulla quia saepe soluta suscipit totam unde voluptatem voluptates.
+                Corporis ea labore magni nihil non! Aliquam cumque, neque. Ab aut consequuntur, corporis magnam magni
+                necessitatibus provident quod? Asperiores aut facilis omnis qui sunt? Assumenda cumque enim id iusto
+                laudantium magnam mollitia pariatur quia quisquam repudiandae. Aliquam aut beatae debitis error
+                excepturi impedit, iste magni modi molestias numquam praesentium tempora totam vitae! Deleniti dolor
+                esse repellendus repudiandae voluptas! Aut beatae deserunt dignissimos dolor doloremque eligendi error,
+                esse excepturi facilis fugiat harum illo inventore molestiae perferendis placeat possimus repellat,
+                similique ut vero voluptates? A aliquam at autem consequatur debitis, dolor ea eius esse et eum fugiat
+                fugit hic id laboriosam libero magnam modi mollitia nesciunt nihil nobis numquam porro quaerat quia quo
+                rem rerum similique temporibus voluptas voluptate voluptatibus. Asperiores aspernatur consectetur
+                consequatur cupiditate deleniti dolore, doloremque eius harum incidunt ipsam laboriosam nemo non odio
+                perferendis provident quam reiciendis reprehenderit sit temporibus unde, ut vel veritatis voluptas?
+                Adipisci alias aspernatur error fugit maxime praesentium quod tempora tenetur veritatis voluptatum!
+                Culpa, debitis deserunt dolores minima officia placeat reprehenderit? Distinctio ea exercitationem illo,
+                laboriosam nobis provident quae? Aspernatur atque consequatur, dolorem error eum, excepturi fuga
+                incidunt ipsam mollitia nobis placeat praesentium quidem quos soluta suscipit tempora voluptas
+                voluptatem.
+            </div>
+            <div class="col-xl-6">quaerat tempore velit voluptate?
+                Assumenda corporis itaque nemo obcaecati quas? Alias aperiam at atque corporis debitis dolorem ex illum
+                iusto laudantium magni quod ratione recusandae, similique sint temporibus veritatis voluptate
+                voluptatem. Ad animi atque commodi debitis, dolor eaque enim ex fugiat ipsa ipsum iusto libero maxime
+                minus molestias necessitatibus nobis odit officiis omnis placeat quam quasi qui quibusdam saepe suscipit
+                tempora vero voluptatem? A amet at distinctio dolorum enim impedit ipsum mollitia natus neque nisi, non,
+                perspiciatis, quae quibusdam repudiandae sapiente tempore ullam? Aliquam, aspernatur doloremque
+                doloribus eaque earum eveniet fuga illo incidunt natus omnis quod ratione rem repellendus tempore ut
+                voluptatem voluptatum? Accusamus aut dolorum earum expedita facilis ipsam iure, libero maxime non odio
+                odit perspiciatis, sequi vitae! Dolorem natus obcaecati quasi quis, rem voluptas. Architecto est impedit
+                laudantium maxime officia pariatur quisquam recusandae similique tempora voluptatem. Ab, accusamus
+                commodi consequatur, dolorem dolores explicabo facere nulla quibusdam repudiandae sed soluta tempore.
+                Aperiam corporis distinctio, eveniet excepturi fugiat laboriosam obcaecati officiis quisquam quo
+                repellat! Aspernatur at autem consequatur delectus deleniti, doloribus dolorum eius error ex excepturi
+                expedita facere fugit illum itaque laboriosam natus nisi nobis odio optio perspiciatis porro qui ratione
+                repellat rerum ullam veniam voluptas, voluptates! Distinctio enim eveniet fugit illum ipsa quisquam sed
+                sequi tempora. Ab accusantium amet animi asperiores consectetur cum debitis dolores doloribus ea,
+                eligendi esse facilis fuga id ipsa laboriosam laudantium magni minus mollitia necessitatibus neque nihil
+                nostrum odio officiis perferendis placeat quas quasi quidem quod ratione repellat repellendus soluta
+                sunt temporibus tenetur totam vitae voluptas. Architecto, beatae, dignissimos error eveniet incidunt
+                iure, magni minima nihil optio qui sequi temporibus tenetur voluptate. A architecto delectus deleniti
+                doloremque dolores eius eum minus, modi mollitia nemo nihil nostrum numquam placeat praesentium, quasi
+                recusandae rerum sint suscipit vitae voluptatum! Ab corporis dolorem eaque fuga molestiae mollitia natus
+                quos tenetur. Adipisci aperiam dolor fugit illum neque perferendis possimus rerum soluta. Autem
+                consequatur dolor inventore iure neque omnis, sapiente? A atque deserunt dolores est et exercitationem
+                fuga id, iste iure laudantium maiores, minus nobis perferendis quasi tempora ut voluptatibus! A beatae
+                consequatur consequuntur debitis dolorum eius esse eum eveniet ex fugit magnam nisi non officia pariatur
+                quaerat quidem reiciendis saepe, sed sint voluptates. Autem blanditiis illo itaque natus nulla quaerat.
+                A adipisci aspernatur consequatur corporis, fuga fugiat illo laudantium maxime nulla numquam provident
+                quo quod repellat reprehenderit, tempora voluptate voluptatum? Alias aliquam aut dicta eligendi enim
+                labore laboriosam modi molestiae nam quas, saepe ut voluptas voluptatum. Autem nemo nihil sequi tempora
+                voluptas! Cum dolores doloribus nesciunt rerum voluptas? Ab cum dolorum eos illum in modi, molestias
+                nihil non optio porro quaerat qui quibusdam sapiente sint soluta vel.
+            </div>
         </div>
     </div>
-</header>
-
-<!--ТУТ СЛАЙДЕР цвета фона меняйте-->
-<section class="slider">
-    <h2 class="text-info">ТУТ СЛАЙДЕР</h2>
 </section>
 
-<!--ТУТ КНОПКА "ВНИЗ"-->
-<span class="button-down"></span>
-
 <!--ТУТ КЛЮЧЕВЫЕ ДАТЫ КОМПАНИИ-->
-<section class="company">
-    <a class="m3-scroll-arr" href="#post-11">
+<section class="company" id="post-11">
+    <a class="m3-scroll-arr" href="">
         <i class="fa fa-angle-down"></i>
     </a>
 
     <div class="about">
-        <div class="img-big img-big--about img-cover img-cover--parallax hidden-md"
-             data-img="https://img4.goodfon.ru/original/320x480/6/b1/makbuk-iabloko-aifon-ten-telefon-noutbuk-ekran-ruchka-gazata.jpg"
-             data-img-webp="https://img4.goodfon.ru/original/1920x1080/6/b1/makbuk-iabloko-aifon-ten-telefon-noutbuk-ekran-ruchka-gazata.jpg"
+        <div class="img-big img-big--about img-cover img-cover--parallax hidden-md d-none d-xl-block"
+             data-img="images/makbuk-iabloko-aifon-ten-telefon-noutbuk-ekran-ruchka-gazata.jpg"
+             data-img-webp="images/makbuk-iabloko-aifon-ten-telefon-noutbuk-ekran-ruchka-gazata.jpg"
         >
             <div class="flexbox__ma">
                 <div class="h1">Наша компания</div>
@@ -340,7 +413,51 @@
 
 <!--ТУТ СОТРУДНИКИ (цвета фона меняйте)-->
 <section class="employee">
-    <h2 class="text-info">ТУТ СОТРУДНИКИ</h2>
+    <div class="team-head">
+        <h2 class="text-info">Команда</h2>
+        <hr class="underline">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda doloremque omnis provident. A alias
+            architecto asperiores, blanditiis consequatur cumque, enim et exercitationem fuga illum itaque iusto
+            laudantium
+            modi molestiae odit, officia omnis pariatur quod repellendus rerum velit voluptatem voluptates
+            voluptatum.</p>
+    </div>
+    <div class="row workers no-gutters">
+        <div class="col-md-3 worker"><img src="images/team/worker.png" alt="">
+            <div class="Name">
+                <h3>Andrew Brown</h3>
+                <p class="position">Manager</p>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto dignissimos earum eligendi minima
+                pariatur recusandae suscipit, velit!</p>
+        </div>
+        <div class="col-md-3 worker"><img src="images/team/worker.png" alt="">
+            <div class="Name">
+                <h3>Andrew Brown</h3>
+                <p class="position">Art-director</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam culpa iste iure modi officiis
+                quia quis, sapiente!</p>
+        </div>
+        <div class="col-md-3 worker"><img src="images/team/worker.png" alt="">
+            <div class="Name">
+                <h3>Andrew Brown</h3>
+                <p class="position">Programmer</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium dolorem fugiat laboriosam minima
+                pariatur quod sint sunt.</p>
+        </div>
+        <div class="col-md-3 worker"><img src="images/team/worker.png" alt="">
+            <div class="Name">
+                <h3>Andrew Brown</h3>
+                <p class="position">Web-designer</p>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquid beatae eius eos
+                necessitatibus perferendis repellendus, similique.</p>
+        </div>
+    </div>
 </section>
 
 <!--ТУТ БЛАГОТВОРИТЕЛЬНОСТЬ (цвета фона меняйте)-->
@@ -350,6 +467,8 @@
 
 <!--ТУТ ПОДВАЛ-->
 <section class="footer1">
+    <!--Кнопка "Вверх"-->
+    <button type="button" class="button footer__up">К верху страницы</button>
         <ul class="widget-social">
             <li>
                 <a href="#" style="font-size: 16px">
@@ -400,4 +519,3 @@
 </section>
 </body>
 </html>
-</body>
